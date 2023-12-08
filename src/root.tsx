@@ -22,8 +22,8 @@ export default component$(() => {
 				{/* ANALYTICS */}
 				<script
 					async
-					src="https://phigara.vercel.app/script.js"
-					data-website-id="2ed1b2ce-bf78-43b8-a975-67b742b1a6df"
+					src="https://eu.umami.is/script.js"
+					data-website-id="0747772f-1dd5-4c9f-a733-a3bbfd5f93d5"
 				></script>
 
 				<meta charSet="utf-8" />
