@@ -3,16 +3,17 @@ import { component$ } from "@builder.io/qwik";
 export default component$(() => {
 	return (
 		<section class="min-h-screen py-24 lg:py-48">
-			<div class="container mx-auto">
-				<div class="w-1/2 p-8 mx-auto mb-24">
-					<h3 class="text-center">One more reason ?</h3>
-					<p class="text-center">Check some of our successful work</p>
+			<div class="container mx-auto px-8">
+				<div class="w-full lg:w-1/2 p-8 mx-auto mb-24">
+					<h3 class="text-secondary uppercase text-sm">One more reason ?</h3>
+					<p class="text-xl lg:text-2xl">Check some of our work</p>
 				</div>
-				<div class="flex flex-col gap-24 justify-center">
-					<article class="flex items-center w-2/3 mx-auto">
+				<div class="flex flex-col gap-12 lg:gap-24 justify-center">
+					<article class="flex flex-col lg:flex-row items-center w-full lg:w-2/3 mx-auto">
 						<img
 							src="https://images.unsplash.com/photo-1695653420354-f2f61974f6b8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 							class="w-96 h-96 object-cover rounded-2xl"
+							alt="Project title"
 						/>
 						<div class="p-12 flex gap-4 flex-col">
 							<h4 class="text-3xl">Project title</h4>

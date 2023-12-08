@@ -24,175 +24,204 @@ import { DeviconReact } from "../icons/React";
 import { LogosAppwriteIcon } from "../icons/Appwrite";
 import { LogosMysqlIcon } from "../icons/Mysql";
 import { LogosPostgresql } from "../icons/Postgresql";
+import IconGrid from "../particles/IconGrid";
 
 export default component$(() => {
 	return (
-		<section class="min-h-screen flex items-center py-24 lg:py-48">
+		<section class="min-h-screen flex items-center py-24 px-8 gap-24">
 			<div class="container mx-auto">
-				<div class="w-full mx-auto lg:w-1/2">
-					<h3 class="text-center text-4xl">What we use</h3>
-					<p class="text-center text-2xl mt-4">
+				<div class="w-full mx-auto lg:w-1/2 mb-12">
+					<h3 class="text-sm text-secondary uppercase">What we use</h3>
+					<p class="text-xl lg:text-2xl">
 						Just latest tach to ensure you've a great product
 					</p>
 				</div>
 
 				{/* LANGUAGES */}
-				<div class="flex flex-col gap-12 px-24">
-					<article class="py-8">
-						<div class="flex justify-between px-12 py-4">
-							<p class="text-3xl">Programing languages</p>
-							<span class="text-4xl">
+				<div class="flex flex-col gap-4 lg:gap-12 px-0 lg:px-24">
+					<article>
+						<div class="flex justify-between items-center px-4 lg:px-12 py-4">
+							<p class="text-xl lg:text-3xl">Programing languages</p>
+							<span class="text-xl lg:text-4xl">
 								<IconoirArrowUpRight />
 							</span>
 						</div>
-						<div class="flex flex-wrap justify-center items-center gap-12 my-12">
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="HTML5"
-							>
-								<LogosHtml5 />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="CSS3"
-							>
-								<LogosCss3 />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Javascript"
-							>
-								<LogosJavascript />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Typescript"
-							>
-								<LogosTypescriptIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="PHP"
-							>
-								<LogosPhp />
-							</span>
+						<div class="grid grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-12 my-4 lg:my-12">
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="HTML5"
+								>
+									<LogosHtml5 />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="CSS3"
+								>
+									<LogosCss3 />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Javascript"
+								>
+									<LogosJavascript />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Typescript"
+								>
+									<LogosTypescriptIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="PHP"
+								>
+									<LogosPhp />
+								</span>
+							</IconGrid>
 						</div>
 					</article>
-				</div>
-				{/* /END LANGUAGES */}
+					{/* /END LANGUAGES */}
 
-				{/* FRAMEWORKS */}
-				<div class="flex flex-col gap-12 px-24">
-					<article class="py-8">
-						<div class="flex justify-between px-12 py-4">
-							<p class="text-3xl">Frameworks</p>
-							<span class="text-4xl">
+					{/* FRAMEWORKS */}
+					<article>
+						<div class="flex justify-between items-center px-4 lg:px-12 py-4">
+							<p class="text-xl lg:text-3xl">Frameworks</p>
+							<span class="text-xl lg:text-4xl">
 								<IconoirArrowUpRight />
 							</span>
 						</div>
-						<div class="flex flex-wrap justify-center items-center gap-12 my-12">
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Laravel"
-							>
-								<LogosLaravel />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Astro"
-							>
-								<LogosAstroIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Qwik"
-							>
-								<LogosQwikIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Svelte"
-							>
-								<LogosSvelteIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="React"
-							>
-								<DeviconReact />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Remix"
-							>
-								<LogosRemixIcon />
-							</span>
+						<div class="grid grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-12 my-4 lg:my-12">
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Laravel"
+								>
+									<LogosLaravel />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Astro"
+								>
+									<LogosAstroIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Qwik"
+								>
+									<LogosQwikIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Svelte"
+								>
+									<LogosSvelteIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="React"
+								>
+									<DeviconReact />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Remix"
+								>
+									<LogosRemixIcon />
+								</span>
+							</IconGrid>
 						</div>
 					</article>
-				</div>
-				{/* /END FRAMEWORKS */}
+					{/* /END FRAMEWORKS */}
 
-				{/* CMS & BAAS */}
-				<div class="flex flex-col gap-12 px-24">
-					<article class="py-8">
-						<div class="flex justify-between px-12 py-4">
-							<p class="text-3xl">CMS & Backend</p>
-							<span class="text-4xl">
+					{/* CMS & BAAS */}
+					<article>
+						<div class="flex justify-between items-center px-4 lg:px-12 py-4">
+							<p class="text-xl lg:text-3xl">CMS & Backend</p>
+							<span class="text-xl lg:text-4xl">
 								<IconoirArrowUpRight />
 							</span>
 						</div>
-						<div class="flex flex-wrap justify-center items-center gap-12 my-12">
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="WordPress"
-							>
-								<LogosWordpressIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="KeystoneJS"
-							>
-								<LogosKeystonejs />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Strapi"
-							>
-								<LogosStrapiIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Appwrite"
-							>
-								<LogosAppwriteIcon />
-							</span>
+						<div class="grid grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-12 my-6 lg:my-12">
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="WordPress"
+								>
+									<LogosWordpressIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="KeystoneJS"
+								>
+									<LogosKeystonejs />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Strapi"
+								>
+									<LogosStrapiIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Appwrite"
+								>
+									<LogosAppwriteIcon />
+								</span>
+							</IconGrid>
 						</div>
 					</article>
-				</div>
-				{/* /END CMS & BAAS */}
+					{/* /END CMS & BAAS */}
 
-				{/* DATABASE */}
-				<div class="flex flex-col gap-12 px-24">
-					<article class="py-8">
-						<div class="flex justify-between px-12 py-4">
-							<p class="text-3xl">Databases</p>
-							<span class="text-4xl">
+					{/* DATABASE */}
+					<article>
+						<div class="flex justify-between items-center px-4 lg:px-12 py-4">
+							<p class="text-xl lg:text-3xl">Databases</p>
+							<span class="text-xl lg:text-4xl">
 								<IconoirArrowUpRight />
 							</span>
 						</div>
-						<div class="flex flex-wrap justify-center items-center gap-12 my-12">
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="MySQL"
-							>
-								<LogosMysqlIcon />
-							</span>
-							<span
-								class="text-9xl bg-gray-50 p-4 rounded-2xl tooltip tooltip-bottom"
-								data-tooltip="Postgresql"
-							>
-								<LogosPostgresql />
-							</span>
+						<div class="grid grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-12 my-6 lg:my-12">
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="MySQL"
+								>
+									<LogosMysqlIcon />
+								</span>
+							</IconGrid>
+							<IconGrid>
+								<span
+									class="text-4xl lg:text-7xl tooltip tooltip-bottom"
+									data-tooltip="Postgresql"
+								>
+									<LogosPostgresql />
+								</span>
+							</IconGrid>
 						</div>
 					</article>
 				</div>
