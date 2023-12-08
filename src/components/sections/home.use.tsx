@@ -1,11 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import {
-	InNavArrowUp,
-	InArrowsUpFromLine,
-	InLongArrowRightUp,
-	InFastArrowRightBox,
-	InLongArrowRightUp1,
-} from "@qwikest/icons/iconoir";
+
 import { IconoirArrowUpRight } from "../icons/ArrowRightUp";
 import { LogosWordpressIcon } from "../icons/WordPress";
 import { LogosKeystonejs } from "../icons/Keystone";
